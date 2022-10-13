@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body
+{
+    background: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#scoreBox
+{
+    position:absolute;
+    top: 10px;
+    right: 40px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+#hiscoreBox
+{
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    font-size: xx-large;
+    font-weight:bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+#board
+{
+    background:linear-gradient(rgb(242, 163, 163) ,rgb(143, 224, 239)) ;
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+   
+}
+
+.head 
+{
+    background:linear-gradient(rgb(57, 187, 231),rgb(88, 208, 174));
+    border: .25vmin solid black;
+    border-radius: 12px;
+    transform: scale(1.1);
+}
+
+.snake
+{
+    background:linear-gradient(rgb(57, 155, 224),rgb(208, 107, 228));
+    border: .25vmin solid white;
+    border-radius: 12px;
+    /* grid-row-start: 10;
+    grid-column-start: 15; */
+   
+ }
+
+.food
+{
+    background: linear-gradient(rgb(238, 45, 45),rgb(131, 201, 242));
+    border: .25vmin solid black;
+    border-radius: 12px;
+}
+
+
+
